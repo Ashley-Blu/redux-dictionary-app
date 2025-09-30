@@ -1,8 +1,10 @@
+//Central Redux store for my application.
 import { configureStore } from '@reduxjs/toolkit';
+import dictionaryReducer from '../features/dictionary/dictionarySlice'; // Import
 
 export const store = configureStore({
   reducer: {
-    // Reducers will be added here
+    dictionary: dictionaryReducer,
   },
 });
 
